@@ -1,123 +1,118 @@
-*, *::before, *::after{
-    box-sizing:border-box;
-}
-
-body, html {
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body, html {
     margin: 0;
     height: 100%;
-    background-color:#dceeff;
+    background-color: #dceeff;
     font-family: Arial, Helvetica, sans-serif;
-    line-height:1.25rem;
-}
-
-h1{
+    line-height: 1.25rem;
+  }
+  
+  h1 {
     margin: 0;
-    color:white;
-}
-
-h2{
-    margin-top:0;
-}
-
-p{
+    color: white;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  p {
     margin: 10px 0;
-}
-
-p.first-child{
-    font-weight:bold;
-}
-
-header{
-    background-color:#4e4eff;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    height:15vh;
-    gap:15px;
-    box-shadow:0 2px 4px rgba(0,0,0,0.2);
-}
-
-button {
-    background-color:#4e4eff;
-    color:white;
-    border:none;
-    border-radius:10px;
-    padding:1vh,1vw;
-    cursor:pointer;
+  }
+  
+  header {
+    background-color: #4e4eff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    background-color: #4e4eff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    cursor: pointer;
     transition: background-color 0.2s ease;
-}
-
-button:hover{
-    background-color:#3c3ce6;
-}
-
-#openDialogBtn {
+  }
+  
+  button:hover {
+    background-color: #3c3ce6;
+  }
+  
+  #openDialogBtn {
     background-color: white;
     color: black;
     font-weight: bold;
     border: 2px solid #4e4eff;
-    transition: background-color 0.2s ease;
-}
+  }
   
   #openDialogBtn:hover {
     background-color: #e6e6ff;
-}
-
-#libraryContainer{
-    display:grid;
-    grid-template-columns:repeat(autofit, minmax(200px, 1fr));
-    gap:20px;
-    margin:4vh,12vw;
-}
-
-.bookCard{
-    background-color:white;
-    border-radius:10px;
-    padding:20px;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    gap:5x;
-    position:relative;
-    height:250px;
-    justify-content:center;
-    align-items:center;
+  }
+  
+  #libraryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 4vh 12vw;
+  }
+  
+  .bookCard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.readStatus{
-    position:absolute;
-    top:0;
-    left:15px;
-    font-weight:bold;
-}
-
-.removeBtn {
+  }
+  
+  .readStatus {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-weight: bold;
+  }
+  
+  .removeBtn {
     background-color: crimson;
     color: white;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
     margin-top: 10px;
-}
-
-.removeBtn:hover {
-    background-color:darkred;
-}
-
-dialog {
+  }
+  
+  .removeBtn:hover {
+    background-color: darkred;
+  }
+  
+  dialog {
     border-radius: 10px;
     border: none;
     padding: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-dialog::backdrop{
-    background:rgba(0,0,0,0.4);
-}
-
-#bookForm {
+  }
+  
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  #bookForm {
     display: flex;
     flex-direction: column;
     width: clamp(250px, 30vw, 400px);
@@ -132,3 +127,4 @@ dialog::backdrop{
     width: 25%;
     align-self: center;
   }
+  
